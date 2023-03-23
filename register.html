@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="register.css">
+   
+    
+    <title>Registro de Mascotas</title>
+</head>
+<body>
+
+    <nav class="menu2">
+        <!--add the img-->
+        <img class="logos" src="img/My Happy Pet.png" alt="este es el logo" >
+        
+        <div class="login">
+            <a class="link-login" href="index.html">Inicio</a>
+            <a class="link-search" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="link-news" href="register.html">Servicios</a>
+            <a class="link-subs" href="#">Fotos</a>
+            <a class="link-menu" href="#">Menu</a>
+            <a class="link-angle" href="#"><i class="fa-solid fa-angles-down"></i></a>
+        </div>
+    </nav>
+
+
+    <div class="principal">
+        <img class="mascotas"src="img/mascotas.jpg" alt="mascotas">
+        <h1>Registra una mascota </h1>
+
+        <div class="formulario">
+            <label>Nombre:<input type="text" placeholder="Ingresa el nombre de la mascota" id="txtNombre"></label>
+            <label>Género:<input type="text" placeholder="Ingresa el genero de la mascota" id="txtGenero"></label>
+            <label>Raza:<input type="text" placeholder="Ingresa la raza de la mascota" id="txtRaza"></label>
+            <label>Edad:<input type="number" placeholder="Ingresa la edad de la mascota" id="numEdad"></label>
+
+            <label>Servicio:
+            <select id="SelServicio">
+                <option value="" disabled selected >Selecciona un servicio </option>
+                <option value="Vacunas">Vacunas</option>
+                <option value="Cepillado">Cepillado</option>
+                <option value="Corte">Corte de pelo</option>
+            </select>
+            </label>
+
+            <label>Sucursal:
+            <select id="SelSucursal">
+                <option value="" disabled selected >Selecciona tu sucursal mas cercana</option>
+                <option value="Mexicali">Sucursal Mexicali</option>
+                <option value="Tijuana">Sucursal Tijuana</option>
+                <option value="Ensenada">Sucursal Ensenada</option>
+                <option value="Rosarito">Sucursal Rosarito</option>
+            </select>
+            </label>
+
+            <label>Dueño:<input type="text" placeholder="Ingresa el nombre del dueño de la mascota" id="propietario"></label>
+
+
+            <button onclick="registro();">Registrar</button>
+        </div>
+
+        <h2>Mascotas Registradas</h2>
+        <div id="mascotas">
+            <!--Aqui se insertaran las mascotas-->
+           
+           
+
+        </div>
+
+    </div>
+        
+        <script src="scripts/register.js"></script>
+        <script src="scripts/display.js"></script>
+</body>
+</html>

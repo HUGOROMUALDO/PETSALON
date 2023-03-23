@@ -1,0 +1,175 @@
+/*REGISTER*/
+
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: arial;
+    margin-top: -100px;
+    font-family: arial;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    /*color:white;*/
+    /*background-color: white;*/
+    background-image: url("img/huellitsAS.jpg");
+    
+
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+/*img{
+    max-width: 100%;
+}*/
+
+
+
+/*FORMULARIO*/
+
+.formulario{
+    /*background-color: #dedede;*/
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+}
+.formulario input,.formulario select{
+    /*display: block;*/
+    margin: 10px;
+    width: 80%;
+    padding: 7px;
+    border-radius: 5px;
+    /*border:1px solid gray;*/
+    /*border: none;*/
+}
+label{
+    display: block;
+    font-family: Arial Black;
+}
+button{
+    font-family: cambria;
+    font-size: 20px;
+    display: block;
+    margin: 15px;
+    text-transform: uppercase;
+    background-color: burlywood;
+}
+.mascotas{
+    width: 60%;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+}
+.error{
+    border:2px solid red;
+    /*background-color: red;*/    
+}
+
+/*DISPLAY*/ 
+
+#mascotas{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 5px;
+    /*column-gap: 5px;*/
+    /*width: 90%;*/
+   
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    cursor: pointer;
+    
+    
+}
+table thead{
+    background-color: #4a69bd;
+    color: white;
+    border: 1px solid white;
+}
+table tbody{
+    background-color:#a3bcf1 ;
+}
+td{
+    padding: 15px;
+    text-align: center;
+}
+th{
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+}
+tr:hover{
+    background-color: #6eaec5;
+
+}
+tr{
+    transition: all ease 300ms;
+}
+
+/*.card p{
+    
+    /*display: block;*/
+    /*text-align: auto;
+} */
+
+
+/*nav*/
+nav.menu2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-top: 80px;
+}
+.logos{
+    margin-top: 10px;
+    height: 100px;
+    /*display:none;*/
+    position: relative;
+    top:10px;
+    
+}
+
+.link-login{
+    margin-right: 20px;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.link-search{
+    height: 30px;
+    /*display:none;*/
+    position: sticky;
+    top:500px;
+}
+.link-news{
+    height: 30px;
+    /*display:none;*/
+    position: sticky;
+    top:500px;
+    text-decoration:underline  rgb(16, 136, 130);
+    
+}
+.link-subs{
+    margin-right: 20px;
+    background-color: rgb(16, 136, 130);
+    color:white;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
